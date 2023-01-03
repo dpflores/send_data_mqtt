@@ -36,7 +36,7 @@ while True:
     client.publish(topic3, data3)
 
     # Espera 5 segundos antes de enviar los siguientes datos
-    time.sleep(0.1)
+    time.sleep(5)
 
 # Cierra la conexión
 client.disconnect()
