@@ -6,13 +6,19 @@ import time
 MQTT_SERVER = "192.168.88.187"
 MQTT_PORT = 1883
 
+# Usuario y contraseña
+username = "test1"
+password = "1234567890"
+
 # Nombres de los tópicos a los que se publicarán los datos
 topic1 = "datos/dato1"
 topic2 = "datos/dato2"
 topic3 = "datos/dato3"
 
-# Crea una instancia del cliente MQTT
+# Crea una instancia del cliente MQTT y autenticación
 client = mqtt.Client()
+client.username_pw_set(username, password)
+
 
 # Conecta el cliente al servidor
 client.connect(MQTT_SERVER, MQTT_PORT)
