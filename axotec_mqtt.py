@@ -35,7 +35,7 @@ while True:
 
     # Espera 5 segundos antes de enviar los siguientes datos
     time.sleep(0.1)
-    print("data sent")
+    print(data1)
 
 # Cierra la conexión
 client.disconnect()
