@@ -1,7 +1,6 @@
 from axotec.accelerometer import Accelerometer
 import paho.mqtt.client as mqtt
 import time
-import numpy as np
 
 accel = Accelerometer()
 
