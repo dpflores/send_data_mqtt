@@ -24,9 +24,9 @@ print("sending data...")
 # Envía los datos en un loop infinito
 while True:
     # Genera tres valores aleatorios entre 0 y 100
-    data1 = round(accel.getAx())
-    data2 = round(accel.getAy())
-    data3 = round(accel.getAz())
+    data1 = round(accel.getAx(),5)
+    data2 = round(accel.getAy(),5)
+    data3 = round(accel.getAz(),5)
 
     # Publica los datos en los tópicos correspondientes
     client.publish(topic1, data1)
