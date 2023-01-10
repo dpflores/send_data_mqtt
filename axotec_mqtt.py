@@ -6,7 +6,7 @@ accel = Accelerometer()
 
 
 USERNAME = 'AxotecPiloto'
-PASSWORD = '1234567890'
+PASSWORD = '123456789'
 
 # Server de ACME
 MQTT_SERVER = 'soldier.cloudmqtt.com'
