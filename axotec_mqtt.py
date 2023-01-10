@@ -17,7 +17,9 @@ topic3 = "datos/accelz"
 
 # Crea una instancia del cliente MQTT
 client = mqtt.Client()
-# client.set_timeout(30)
+client.set_timeout(30)
+client.username_pw_set("test1", "1234567890")
+
 # Conecta el cliente al servidor
 client.connect(MQTT_SERVER, MQTT_PORT)
 print("sending data...")
