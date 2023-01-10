@@ -24,7 +24,7 @@ client = mqtt.Client()
 client.username_pw_set("jqyvgznn", "7h0WPKBMehTY")
 
 # Conecta el cliente al servidor
-client.connect(MQTT_SERVER, MQTT_PORT)
+client.connect(MQTT_SERVER, MQTT_PORT,60)
 print("sending data...")
 # Envía los datos en un loop infinito
 while True:
