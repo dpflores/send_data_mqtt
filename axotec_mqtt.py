@@ -10,6 +10,10 @@ accel = Accelerometer()
 MQTT_SERVER = "192.168.88.187"
 MQTT_PORT = 1883
 
+# Server de ACME
+MQTT_SERVER = 'soldier.cloudmqtt.com'
+MQTT_PORT = 15258
+
 # Nombres de los tópicos a los que se publicarán los datos
 topic1 = "datos/accelx"
 topic2 = "datos/accely"
@@ -17,7 +21,7 @@ topic3 = "datos/accelz"
 
 # Crea una instancia del cliente MQTT
 client = mqtt.Client()
-client.username_pw_set("test1", "1234567890")
+client.username_pw_set("jqyvgznn", "7h0WPKBMehTY")
 
 # Conecta el cliente al servidor
 client.connect(MQTT_SERVER, MQTT_PORT)
