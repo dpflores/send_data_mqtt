@@ -5,10 +5,8 @@ import time
 accel = Accelerometer()
 
 
-
-# Dirección IP del servidor MQTT y puerto
-MQTT_SERVER = "192.168.88.187"
-MQTT_PORT = 1883
+USERNAME = 'AxotecPiloto'
+PASSWORD = '1234567890'
 
 # Server de ACME
 MQTT_SERVER = 'soldier.cloudmqtt.com'
@@ -21,7 +19,7 @@ topic3 = "datos/accelz"
 
 # Crea una instancia del cliente MQTT
 client = mqtt.Client()
-client.username_pw_set("jqyvgznn", "7h0WPKBMehTY")
+client.username_pw_set(USERNAME, PASSWORD)
 
 # Conecta el cliente al servidor
 client.connect(MQTT_SERVER, MQTT_PORT,60)
