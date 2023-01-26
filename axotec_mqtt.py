@@ -23,6 +23,7 @@ client.username_pw_set(USERNAME, PASSWORD)
 
 # Conecta el cliente al servidor
 client.connect(MQTT_SERVER, MQTT_PORT,60)
+client.loop_start()
 print("sending data...")
 # Envía los datos en un loop infinito
 while True:
