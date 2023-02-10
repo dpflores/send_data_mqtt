@@ -7,7 +7,7 @@ def main():
 	os.system("systemctl enable send_mqtt.service")
 	os.system("systemctl start send_mqtt.service")
 
-	os.system("pip3 install -r requirements")
+	os.system("pip3 install -r requirements.txt")
 
 	print("done")
 if __name__ == '__main__':
