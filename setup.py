@@ -2,7 +2,7 @@
 import os
 
 def main():
-	print("Setting the openVPN")
+	print("Setting the Service")
 	os.system("cp send_mqtt.service /etc/systemd/system")
 	os.system("systemctl enable send_mqtt.service")
 	os.system("systemctl start send_mqtt.service")
