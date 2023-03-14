@@ -6,7 +6,8 @@ After=multi-user.target
 
 Type=simple
 
-ExecStart=/usr/bin/python3 /root/send_data_mqtt/axotec_mqtt.py
+# ExecStart=/usr/bin/python3 /root/send_data_mqtt/axotec_mqtt.py
+ExecStart=/usr/bin/python3 /root/send_data_mqtt/test_mqtt_thingsboard.py
 Restart=on-failure
 RestartSec=5
 
